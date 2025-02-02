@@ -4,12 +4,14 @@ import com.a1st.grapqlspringboot.book.Book;
 import com.a1st.grapqlspringboot.book.BookRepository;
 import lombok.RequiredArgsConstructor;
 import org.springframework.boot.CommandLineRunner;
+import org.springframework.stereotype.Component;
 
 /**
  * @author: Abderrahman Youabd aka: A1ST
  * @version: 1.0
  */
 @RequiredArgsConstructor
+@Component
 public class DataLoader implements CommandLineRunner {
 
     private final BookRepository bookRepository;
