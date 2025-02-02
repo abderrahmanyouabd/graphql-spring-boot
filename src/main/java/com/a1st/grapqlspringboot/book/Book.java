@@ -13,7 +13,6 @@ import lombok.NoArgsConstructor;
  */
 
 @Entity
-@AllArgsConstructor
 @Data
 @NoArgsConstructor
 public class Book {
@@ -24,4 +23,11 @@ public class Book {
     private String title;
     private String author;
     private Integer publishedYear;
+
+
+    public Book(String title, String author, Integer publishedYear) {
+        this.title = title;
+        this.author = author;
+        this.publishedYear = publishedYear;
+    }
 }
