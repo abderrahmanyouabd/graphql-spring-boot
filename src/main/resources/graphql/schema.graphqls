@@ -6,9 +6,9 @@ type Book {
 }
 
 input BookInput {
-    title: String!
-    author: String!
-    publishedYear: Int!
+    title: String
+    author: String
+    publishedYear: Int
 }
 
 type Query {
